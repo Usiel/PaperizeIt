@@ -1,0 +1,122 @@
+#{extends 'main.html' /}
+#{set title:'What is Paperize?' /}
+
+<script type="text/javascript">
+$(function () {
+	paperize.initCheckboxes();
+	
+	paperize.initAutomaticPreferenceSelection();
+	
+	paperize.initSourceBias();
+	
+	paperize.initSourceBiasAddButton();
+	
+	paperize.initPreferenceForm();
+});
+</script>
+
+<div id="portfolio">
+	<div id="showcase">
+			<div class="container">
+				<div class="row header">
+					<div class="col-md-12">
+						<h1>Create your subscription</h1>
+						<h4>Select topics and interests that fit your needs. We will generate your individual magazine based on the preferences set below.</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="project">
+							<h3>Automatic selection <i class="fa fa-facebook-square"> </i> <i class="fa fa-twitter-square"> </i> <i class="fa fa-google-plus-square"> </i></h3>
+							<p class="lead" style="text-align:center;">Enter your social login information from Facebook, Twitter or Google Plus. We will confidentionally use your information to automatically fill out the form bellow.</p>
+							<p class="description">
+								<form>
+									<div class="form-group">
+										<label for="facebook_login">Login</label>
+										<input class="form-control" type="email" />
+									</div>
+									<div class="form-group">
+										<label for=facebook_password">Password</label>
+										<input class="form-control" type="password">
+									</div>
+									<div>
+										<button type="submit" class="button btn-success" id="automatic-selection-button" style="font-size: 10pt; padding: 5px; padding-left: 10px; padding-right: 10px;"><i class="fa fa-paperclip"> </i> Grab interests</button>
+									</div>
+								</form>
+							</p>
+						</div>
+						#{form @Paperize.selectPreferences(), id: 'preference-selection-form' }
+							<div class="project">
+								<h3>Topics</h3>
+								<p class="lead" style="text-align:center;">Select topics that interest you. We will use this information to individualize your magazine.</p>
+								<p class="description">
+									<ul class="checkboxlist" id="topic-list">
+										%{
+											for(parentPreference in preferences) {
+												if (parentPreference.parent == null) {
+										}%
+													<li>	
+														<span class="ui-icon ui-icon-triangle-1-e expand-checkbox-button"></span>
+														<input class="parent-checkbox" type="checkbox" name="preference" id="preference_${parentPreference.id}" value=${parentPreference.id} />
+														<label for="preference_${parentPreference.id}">${parentPreference.name}</label>
+														<ul class="checkboxlist" style="display: none;">
+										%{
+														for(child in preferences) {
+															if (child.parent == parentPreference) {
+										%}
+															<li>
+																<input type="checkbox" name="preference" id="preference_${child.id}" value=${child.id} />
+																<label for="preference_${child.id}">${child.name}</label>
+															</li>
+										%{
+														}
+													}
+										%}
+														</ul>
+													</li>
+										{%
+												}
+											}
+										}%
+									</ul>
+								</p>
+							</div>
+							
+							<div class="project">
+								<h3>Source Bias</h3>
+								<p class="lead" style="text-align:center;">You may choose sources (e.g. newspapers, magazines) which you can bias positively or negatively for your individual magazine.</p>
+								<div class="description" id="source-bias-list">
+									<div class="source-bias">
+										<select name="source_0_select" class="source-bias-select">
+											<option value="0">-- select source --</option>
+											%{
+												for(source in sources) {
+											%}
+													<option value="${source.id}">${source.name}</option>
+											%{
+												}
+											%}
+										</select>
+										<i class="fa fa-thumbs-o-down" style="font-size: 14pt;"></i>
+										<div class="source-bias-slider"></div>
+										<i style="font-size: 14pt;" class="fa fa-thumbs-o-up"></i>
+										<input type="text" name="source_0_bias" value="0" class="source-bias-value" style="display: none" />
+									</div>
+								</div>
+								<br />
+								<button class="button btn-success" style="font-size: 10pt; padding: 5px; padding-left: 10px; padding-right: 10px;" id="button-add-source-bias"><i class="fa fa-plus-circle"> </i> Add source bias</button>
+							</div>
+							<div style="text-align:right;">
+								<button type="submit" class="button btn-success">Continue <i class="fa fa-arrow-circle-o-right"> </i></button>
+							</div>
+							<hr />
+						#{/form}
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+<script type="text/javascript">
+	
+</script>

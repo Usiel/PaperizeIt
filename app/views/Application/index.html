@@ -1,0 +1,20 @@
+#{extends 'main_start.html' /}
+#{set title:'Welcome to Paperize.it' /}
+
+<div id="hero" style="background-image:url(@{'/public/images/index.jpg'});">
+	<div class="container">
+		<h1 class="hero-text animated fadeInDown">
+			Readable Reading <br />
+			Enjoy Reading Again
+		</h1>
+		<p class="sub-text animated fadeInDown">
+			Paperize.it collects your webbased news or articles and creates and delivers your personal newspaper to you!<br /><br />
+			<b>Click on Subscribe to start enjoy reading again!</b>
+		</p>
+		<div class="cta animated fadeInDown">
+			<a href="@{Paperize.index()}" class="button-outline">About Paperize.it</a>
+			<a href="@{Paperize.subscribe()}" class="button btn-success">Subscribe</a>
+		</div>
+		<div class="img"></div>
+	</div>
+</div>

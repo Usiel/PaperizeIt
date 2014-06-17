@@ -1,0 +1,29 @@
+/*bottom menu*/
+.menu a {
+  color: #ff0000!important;
+}
+
+.checkboxlist {
+	list-style: none;
+}
+
+.checkboxlist .expand-checkbox-button {
+	display: inline-block;
+}
+
+.source-bias-slider {
+	width: 400px;
+	display: inline-block;
+}
+
+.inline-element {
+	display: inline-block;
+}
+
+.source-bias-slider {
+	margin: 10px;
+}
+
+.source-bias-select {
+	margin: 10px;
+}
