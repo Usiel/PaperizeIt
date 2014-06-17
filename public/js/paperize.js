@@ -9,50 +9,39 @@ var paperize = {
 				if ($('#topic-list input:checked').length == 0) {
 					evt.preventDefault();
 					alert("Please make sure that you selected at least 1 topic");
+				} else {
+					var sorted = $('#source-bias-like-container').sortable( "toArray" );
+					var ignore = $('#source-bias-ignore-container').sortable( "toArray" );
+					
+					paperize.clearPostFields('preference-selection-form');
+					
+					$.each(sorted, function(key, value) {
+						paperize.addPostFieldToForm('preference-selection-form', 'sorted', value);
+					});
+					
+					$.each(ignore, function(key, value) {
+						paperize.addPostFieldToForm('preference-selection-form', 'ignore', value);
+					});
 				}
 			});
 		},
 		
 		initSourceBias: function() {
-			$('.source-bias-slider').last().slider({
-				value: 0,
-				min: -5,
-				max: 5,
-				change: function(event, ui) {
-						$(this).next().next().val(ui.value);
-						if (ui.value > 0) {
-							$(this).prev().css('font-size', Math.max(14, 14 - (ui.value * 1.5)) + 'pt');
-							$(this).next().css('font-size', 14 + (ui.value * 1.5) + 'pt');
-						} else {
-							$(this).prev().css('font-size', 14 + (-ui.value * 1.5) + 'pt');
-							$(this).next().css('font-size', Math.max(14, 14 - (-ui.value * 1.5)) + 'pt');
-						}						  				   
-				}
-			});			
+			$('#source-bias-like-container, #source-bias-list, #source-bias-ignore-container').sortable({
+				connectWith: ".connected-sortables"
+			});
 		},
 		
-		initSourceBiasAddButton: function() {
-			$('#button-add-source-bias').click(function (evt) {
-				evt.preventDefault();
-				
-				var clone = $('#source-bias-list .source-bias').last().clone();
-				
-				
-				
-				$('#source-bias-list').append(clone);
-				var select = $('#source-bias-list .source-bias-select').last();
-				var input = $('#source-bias-list .source-bias-value').last();
-				var number = select.prop('name').substring(select.prop('name').indexOf('_') + 1, select.prop('name').lastIndexOf('_'));
-				var newNumber = parseInt(number) + 1;
-				
-				select.prop('name', 'source_' + newNumber + '_select');
-				input.prop('name', 'source_' + newNumber + '_bias');
-				input.val(0);
-				
-				$('#source-bias-list .source-bias').last().find('.fa').css('font-size', '14pt');
-								
-				paperize.initSourceBias();
-			});
+		clearPostFields: function(formId) {
+			$('#' + formId + ' #added-post-fields-container').remove();
+			$('<div></div>').attr('id', 'added-post-fields-container').appendTo('#' + formId);
+		},
+		
+		addPostFieldToForm: function(formId, name, value) {
+			$('<input />').attr('type', 'hidden')
+	          .attr('name', name)
+	          .attr('value', value)
+	          .appendTo('#' + formId + ' #added-post-fields-container');
 		},
 		
 		initAutomaticPreferenceSelection: function () {

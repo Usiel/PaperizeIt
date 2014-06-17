@@ -39,10 +39,18 @@ public class Paperize extends Controller {
 				preferenceIds.add(Integer.parseInt(i));
 			}
 	    	
-	    	Map<Integer, Integer> sourceBias = new HashMap<Integer, Integer>();
+	    	SortedMap<Integer, Integer> sourceBias = new TreeMap<Integer, Integer>();
+	    	String[] sortedSourceIds = params.getAll("sorted");
 	    	
-	    	for (int i = 0; params.get("source_" + i + "_select") != null; i++) {
-	    		sourceBias.put(Integer.parseInt(params.get("source_" + i + "_select")), Integer.parseInt(params.get("source_" + i + "_bias")));
+	    	// Put in sorted source bias on a range of sortedIds.length
+	    	for (int i = 0; i < sortedSourceIds.length; i++) {
+	    		sourceBias.put(Integer.parseInt(sortedSourceIds[i].substring(7)), sortedSourceIds.length - i);
+	    	}
+	    	
+	    	String[] ignoreSourceIds = params.getAll("ignore");
+	    	
+	    	for (int i = 0; i < ignoreSourceIds.length; i++) {
+	    		sourceBias.put(Integer.parseInt(ignoreSourceIds[i].substring(7)), -1);
 	    	}
 	
 	    	Subscription newSubscription = new Subscription(null, new Date(), null);

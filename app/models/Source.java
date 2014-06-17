@@ -19,12 +19,20 @@ public class Source extends Model {
 			return;
 		}
 		
-		Source spiegel = new Source("DER SPIEGEL", "...");
-		Source economist = new Source("The Economist", "...");
-		Source oglobo = new Source("O Globo", "...");
+		Source spiegel = new Source("spiegel.de", "...");
+		Source economist = new Source("economist.de", "...");
+		Source welt = new Source("welt.de", "...");
+		Source bild = new Source("bild.de", "...");
+		Source titanic = new Source("titanic-magazin.de", "...");
+		Source focus = new Source("focus.de", "...");
+		Source faz = new Source("faz.de", "...");
 		
 		spiegel.save();
 		economist.save();
-		oglobo.save();
+		welt.save();
+		bild.save();
+		titanic.save();
+		focus.save();
+		faz.save();
 	}
 }
