@@ -12,12 +12,16 @@ public class Subscription extends Model {
 	@ManyToOne
 	public User user;
 	
-	public Date dateStarted;
-	public Integer deliveries;
+	@ManyToOne
+	public SubscriptionModel subscriptionModel;
 	
-	public Subscription(User user, Date dateStarted, Integer deliveries) {
+	public String anonymousUser;
+	
+	public Date dateStarted;
+	
+	public Subscription(User user, SubscriptionModel subscriptionModel, Date dateStarted) {
 		this.user = user;
+		this.subscriptionModel = subscriptionModel;
 		this.dateStarted = dateStarted;
-		this.deliveries = deliveries;
 	}
 }

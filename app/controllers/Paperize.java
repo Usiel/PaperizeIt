@@ -1,6 +1,5 @@
 package controllers;
 
-import play.db.jpa.GenericModel;
 import play.mvc.*;
 
 import java.util.*;
@@ -53,7 +52,7 @@ public class Paperize extends Controller {
 	    		sourceBias.put(Integer.parseInt(ignoreSourceIds[i].substring(7)), -1);
 	    	}
 	
-	    	Subscription newSubscription = new Subscription(null, new Date(), null);
+	    	Subscription newSubscription = new Subscription(null, null, new Date());
 	    	newSubscription.save();
 	    	
 	    	for (int prefId : preferenceIds) {
