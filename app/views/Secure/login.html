@@ -1,0 +1,39 @@
+#{extends 'main.html' /}
+#{set title:'Login' /}
+
+<script type="text/javascript">
+</script>
+
+<div id="portfolio">
+	<div id="showcase">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="project">
+						<h3>Login</h3>
+						<p class="description">
+							#{form @Secure.authenticate(), id: 'preference-selection-form' }
+								<div class="form-group">
+									<label for="email">Your E-Mail</label>
+									<input class="form-control" name="username" type="email" />
+								</div>
+								<div class="form-group">
+									<label for=password">Password</label>
+									<input class="form-control" name="password" type="password">
+								</div>
+								<div>
+									<button type="submit" class="button-clear" style="padding: 14px; margin-right: 20px;">Login</button>
+									<a href="@{Account.register()}" class="button btn-success">Register</a>
+								</div>
+							#{/form}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	
+</script>
