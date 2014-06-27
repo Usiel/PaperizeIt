@@ -1,5 +1,5 @@
 package models;
-
+import models.Source;
 import javax.persistence.*;
 import play.db.jpa.*;
 

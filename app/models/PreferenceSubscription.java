@@ -3,6 +3,7 @@ package models;
 import javax.persistence.*;
 
 import play.db.jpa.Model;
+import models.Preference;
 
 @Entity
 public class PreferenceSubscription extends Model {
