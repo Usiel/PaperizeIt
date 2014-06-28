@@ -93,9 +93,9 @@ public class Account extends Secure.Security {
     	User user = User.find("email", Secure.Security.connected()).first();
     	
     	Cookie subscriptionCookie = request.cookies.get("NewSubscription");
-		//Attach subscription to user
+    	response.cookies.remove("NewSubscription");
 		Subscription sub = Subscription.find("anonymousUser", subscriptionCookie.value).first();
-	
+		
     	sub.subscriptionModel = subModel;
     	sub.save();
     	
