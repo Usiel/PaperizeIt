@@ -128,3 +128,8 @@
 	border-radius: 20px;
 	zoom: 1;
 }
+
+.two-inline-form {
+	display: inline-block;
+	width: 49%;
+}

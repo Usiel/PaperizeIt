@@ -1,0 +1,87 @@
+#{extends 'main.html' /}
+#{set title:'Subscribe your individual magazine' /}
+
+<script type="text/javascript">
+	$(function () {
+		$('.datepicker').datepicker();
+	});
+</script>
+
+<div id="portfolio">
+	<div id="showcase">
+			<div class="container">
+				<div class="row header">
+					<div class="col-md-12">
+						<h1>Register</h1>
+						<h4>In order to continue and order your individual paperized magazine, please fill out the following information and create an account.</h4>
+					</div>
+				</div>
+				#{form @Account.registerPost(), class: "form-horizontal" }
+					<div class="row">
+						<div class="col-md-12">
+							<div class="project">
+										
+							    #{ifErrors}
+							        <p class="alert alert-danger">
+							            All fields are required!
+							        </p>
+							    #{/ifErrors}		
+																							
+								<div class="description">
+									<h3>Personal information</h3>
+									<div class="form-group">
+										<label for="firstname">Name</label>
+										<br/>
+										<input class="form-control two-inline-form" type="text" name="firstname" placeholder="Firstname" value="${params.firstname}" />
+										<input class="form-control two-inline-form" type="text" name="lastname" placeholder="Lastname" value="${params.lastname}" />
+									</div>
+									<div class="form-group">
+										<label for="salutation">Gender</label>
+										<select name="salutation" class="form-control">
+											<option value="Mrs.">Female</option>
+											<option value="Mr.">Male</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="dateOfBirth">Birthday</label>
+										<input class="form-control datepicker" type="text" name="dateOfBirth" placeholder="Select your date of birth" value="${params.dateOfBirth}" />
+									</div>
+									<div class="form-group">
+										<label for="street">Street</label>
+										<input class="form-control" type="text" name="street" placeholder="Street" value="${params.street}" />
+									</div>
+									<div class="form-group">
+										<label for="postalCode">Postal Code and Town</label>
+										<br/>
+										<input class="form-control two-inline-form" type="text" name="postalCode" placeholder="Postal Code" value="${params.postalCode}" />
+										<input class="form-control two-inline-form" type="text" name="town" placeholder="Town" value="${params.town}" />
+									</div>
+								</div>
+								<hr />
+								<div class="description">
+									<h3>Account</h3>
+									<div class="form-group">
+										<label for="email">E-Mail</label>
+										<input class="form-control" type="text" name="email" placeholder="Enter your e-mail" value="${params.email}"/>
+									</div>
+									<div class="form-group">
+										<label for="password">Password</label>
+										<input class="form-control" type="password" name="password" />
+									</div>
+									<div class="form-group">
+										<label for="passwordRepeat">Re-type Password</label>
+										<input class="form-control" type="password" name="passwordRepeat" />
+									</div>
+								</div>
+								
+								<hr />
+								<div style="text-align: right;">
+									<button type="submit" class="button btn-success">Continue</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				#{/form}
+			</div>
+		</div>
+</div>

@@ -8,6 +8,7 @@ import java.util.*;
 
 import javax.persistence.*;
 
+import play.data.validation.Required;
 import play.db.jpa.*;
 
 @Entity
@@ -18,6 +19,7 @@ public class User extends Model {
 	public String password;
 	public String salt;
 	
+	@Required
 	public String firstName;
 	public String lastName;
 	public Date dateOfBirth;
