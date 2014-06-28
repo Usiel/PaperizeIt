@@ -11,6 +11,11 @@
 				<div class="col-md-12">
 					<div class="project">
 						<h3>Login</h3>
+						    #{ifErrors}
+						        <p class="alert alert-danger">
+						            The username password combination you entered does not exist.
+						        </p>
+						    #{/ifErrors}	
 						<p class="description">
 							#{form @Secure.authenticate(), id: 'preference-selection-form' }
 								<div class="form-group">
@@ -22,7 +27,7 @@
 									<input class="form-control" name="password" type="password">
 								</div>
 								<div>
-									<input type="checkbox" checked name="rememberme" style="display: none;" />
+									<input type="checkbox" checked name="remember" style="display: none;" />
 									<button type="submit" class="button-clear" style="padding: 14px; margin-right: 20px;">Login</button>
 									<a href="@{Account.register()}" class="button btn-success">Register</a>
 								</div>

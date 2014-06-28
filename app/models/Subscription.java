@@ -19,8 +19,15 @@ public class Subscription extends Model {
 	
 	public Date dateStarted;
 	
-	public Subscription(User user, SubscriptionModel subscriptionModel, Date dateStarted) {
+	@OneToMany
+    public List<SourceBias> sourceBias;
+	
+	@OneToMany
+	public List<PreferenceSubscription> preferences;
+	
+	public Subscription(User user, String anonymousUser, SubscriptionModel subscriptionModel, Date dateStarted) {
 		this.user = user;
+		this.anonymousUser = anonymousUser;
 		this.subscriptionModel = subscriptionModel;
 		this.dateStarted = dateStarted;
 	}

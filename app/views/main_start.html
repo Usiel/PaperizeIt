@@ -58,9 +58,12 @@
 				        </ul>
         			</li>
         			<li>
-        				<a href="@{Secure.login()}">
-          					Login
-          				</a>
+						#{if controllers.Account.connected() }
+                   			<a href="@{Secure.logout()}">Log out</a>
+        				#{/if}
+        				#{else}
+        					<a href="@{Secure.login()}">Login</a>
+                		#{/else}
         			</li>
         			
       			</ul>

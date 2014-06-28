@@ -1,0 +1,73 @@
+#{extends 'main.html' /}
+#{set title:'Subscribe your individual magazine' /}
+
+<script type="text/javascript">
+	$(function () {
+		$('.model-box').click(function () {
+			$(this).find('input[type=radio]').prop('checked', true);
+			$('#submit-model').prop('disabled', false);
+		});
+		
+		
+	});
+</script>
+
+<div id="portfolio">
+	<div id="showcase">
+			<div class="container">
+				<div class="row header">
+					<div class="col-md-12">
+						<h1>Select your subscription model</h1>
+					</div>
+				</div>
+				#{form @Account.selectModelPost(), class: "form-horizontal" }
+					<div class="row">
+						<div class="col-md-12">
+							<div class="project">
+										
+							    #{ifErrors}
+							        <p class="alert alert-danger">
+							            All fields are required!
+							        </p>
+							    #{/ifErrors}		
+																							
+								<div class="description">
+									<div class="col-md-4 bg-info model-box" id="preview-sub-model">
+										<h2><input type="radio" name="model" value="preview" /> Preview</h2>
+										<ul class="plus-list">
+											<li>No costs</li>
+											<li>Access to your personalized headlines online</li>
+											<li>Newsletter</li>
+										</ul>
+										<h3>free</h3>
+									</div>
+									<div class="col-md-4 bg-warning model-box" id="trial-sub-model">
+										<h2><input type="radio" name="model" value="trial" /> 3 Month Trial</h2>
+										<ul class="plus-list">
+											<li>12 deliveries of your individual magazine</li>
+											<li>Attractive costing</li>
+											<li>Your personalized magazine for 3 months</li>
+										</ul>
+										<h3>35 EUR</h3>
+									</div>
+									<div class="col-md-4 bg-success model-box" id="full-sub-model">
+										<h2><input type="radio" name="model" value="full" /> 1 Year Subscription</h2>
+										<ul class="plus-list">
+											<li>Individual magazines for 1 year for a special premium customer fee</li>
+											<li>Attractive costing</li>
+										</ul>
+										<h3>130 EUR</h3>
+									</div>
+								</div>		
+								<br />						
+								<hr />
+								<div style="text-align: right;">
+									<button id="submit-model" type="submit" disabled class="button btn-success">Subscribe now and checkout!</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				#{/form}
+			</div>
+		</div>
+</div>

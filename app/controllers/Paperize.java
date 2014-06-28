@@ -21,11 +21,9 @@ public class Paperize extends Controller {
     public static void subscribe(Boolean error) {
     	if (error != null && error)
     		response.status = 400;
-    	
-    	Preference.GeneratePreferences();
+
     	List<Preference> preferences = Preference.findAll();
     	
-    	Source.GenerateSources();
     	List<Source> sources = Source.findAll();
     	
     	render(preferences, sources);
@@ -48,25 +46,29 @@ public class Paperize extends Controller {
 	    	String[] sortedSourceIds = params.getAll("sorted");
 	    	
 	    	// Put in sorted source bias on a range of sortedIds.length
-	    	for (int i = 0; i < sortedSourceIds.length; i++) {
-	    		sourceBias.put(Integer.parseInt(sortedSourceIds[i].substring(7)), sortedSourceIds.length - i);
+	    	if (sortedSourceIds != null) {
+		    	for (int i = 0; i < sortedSourceIds.length; i++) {
+		    		sourceBias.put(Integer.parseInt(sortedSourceIds[i].substring(7)), sortedSourceIds.length - i);
+		    	}
 	    	}
 	    	
 	    	String[] ignoreSourceIds = params.getAll("ignore");
 	    	
-	    	for (int i = 0; i < ignoreSourceIds.length; i++) {
-	    		sourceBias.put(Integer.parseInt(ignoreSourceIds[i].substring(7)), -1);
+	    	if (ignoreSourceIds != null) {
+		    	for (int i = 0; i < ignoreSourceIds.length; i++) {
+		    		sourceBias.put(Integer.parseInt(ignoreSourceIds[i].substring(7)), -1);
+		    	}
 	    	}
-	
+
 	    	//Get user if connected
 	    	User user = User.find("email", Secure.Security.connected()).first();
 	    	//Create random string
 			SecureRandom random = new SecureRandom();
 	    	String anonymousUser = new BigInteger(130, random).toString(32);
 	    	
-	    	//Either create subscription with user or anonymousUser (identified by cookie with random string)
+	    	//Either create subscription with user or just an identifier to remember the selection for later (identified by cookie with random string)
 	    	 Subscription newSubscription = user != null ?
-	    			 new Subscription(user, null, new Date())
+	    			 new Subscription(user, anonymousUser, null, new Date())
 	    	 		: new Subscription(anonymousUser, null, new Date());
 	    	newSubscription.save();
 	    	
@@ -88,9 +90,9 @@ public class Paperize extends Controller {
 	    		redirect("Account.selectModel()", new Object[] { });
 	    	} else {	    
 	    		Cookie cookie = new Cookie();
-	    		cookie.name = "AnonymousUserId";
+	    		cookie.name = "NewSubscription";
 	    		cookie.value = anonymousUser;
-	    		response.cookies.put("AnonymousUserId", cookie);
+	    		response.cookies.put("NewSubscription", cookie);
 	    		Account.registerAndSubscribe();
 	    	}
     	}

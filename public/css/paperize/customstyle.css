@@ -43,6 +43,7 @@
 
 #source-bias-list .source-bias {
 	display: inline-block;
+	width: 31%;
 }
 
 
@@ -94,7 +95,6 @@
 
 .source-bias {
 	background: #ddd;
-	width: 250px;
 	height: 30px;
 	margin: 5px;
 		background: #f4f4f4;
@@ -132,4 +132,16 @@
 .two-inline-form {
 	display: inline-block;
 	width: 49%;
+}
+
+.error-input {
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 10px;
+}
+
+.model-box {
+	padding-top: 10px;
+	height: 250px;
+	margin-bottom: 30px;
 }

@@ -29,28 +29,28 @@
 																							
 								<div class="description">
 									<h3>Personal information</h3>
-									<div class="form-group">
+									<div class="form-group ${errors.forKey('firstname') || errors.forKey('lastname') ? 'has-error' : ''}">
 										<label for="firstname">Name</label>
 										<br/>
 										<input class="form-control two-inline-form" type="text" name="firstname" placeholder="Firstname" value="${params.firstname}" />
 										<input class="form-control two-inline-form" type="text" name="lastname" placeholder="Lastname" value="${params.lastname}" />
 									</div>
-									<div class="form-group">
+									<div class="form-group ${errors.forKey('salutation') ? 'has-error' : ''}">
 										<label for="salutation">Gender</label>
 										<select name="salutation" class="form-control">
 											<option value="Mrs.">Female</option>
 											<option value="Mr.">Male</option>
 										</select>
 									</div>
-									<div class="form-group">
+									<div class="form-group ${errors.forKey('dateOfBirth') ? 'has-error' : ''}">
 										<label for="dateOfBirth">Birthday</label>
 										<input class="form-control datepicker" type="text" name="dateOfBirth" placeholder="Select your date of birth" value="${params.dateOfBirth}" />
 									</div>
-									<div class="form-group">
+									<div class="form-group ${errors.forKey('street') ? 'has-error' : ''}">
 										<label for="street">Street</label>
 										<input class="form-control" type="text" name="street" placeholder="Street" value="${params.street}" />
 									</div>
-									<div class="form-group">
+									<div class="form-group ${errors.forKey('postalCode') || errors.forKey('town') ? 'has-error' : ''}">
 										<label for="postalCode">Postal Code and Town</label>
 										<br/>
 										<input class="form-control two-inline-form" type="text" name="postalCode" placeholder="Postal Code" value="${params.postalCode}" />
@@ -60,15 +60,15 @@
 								<hr />
 								<div class="description">
 									<h3>Account</h3>
-									<div class="form-group">
+									<div class="form-group ${errors.forKey('email') ? 'has-error' : ''}">
 										<label for="email">E-Mail</label>
 										<input class="form-control" type="text" name="email" placeholder="Enter your e-mail" value="${params.email}"/>
 									</div>
-									<div class="form-group">
+									<div class="form-group ${errors.forKey('password') ? 'has-error' : ''}">
 										<label for="password">Password</label>
 										<input class="form-control" type="password" name="password" />
 									</div>
-									<div class="form-group">
+									<div class="form-group ${errors.forKey('passwordRepeat') ? 'has-error' : ''}">
 										<label for="passwordRepeat">Re-type Password</label>
 										<input class="form-control" type="password" name="passwordRepeat" />
 									</div>
