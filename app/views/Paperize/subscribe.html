@@ -1,5 +1,5 @@
 #{extends 'main.html' /}
-#{set title:'What is Paperize?' /}
+#{set title:'Subscribe your individual magazine' /}
 
 <script type="text/javascript">
 $(function () {
@@ -80,10 +80,13 @@ $(function () {
 								</p>
 							</div>
 							
-							<div class="project">
+							<div class="project clearfix">
 								<h3>Source Bias</h3>
-								<p class="lead" style="text-align:center;">You may choose sources (e.g. newspapers, magazines) which you can bias positively or negatively for your individual magazine.</p>
-								<ul class="description connected-sortables" id="source-bias-list">
+								<p class="lead" style="text-align:center;">
+									You may choose sources (e.g. newspapers, magazines) which you can bias positively or negatively for your individual magazine. 
+									<strong>Drag and drop the sources into the two containers below</strong>
+								</p>
+								<ul class="description connected-sortables col-md-12" id="source-bias-list">
 									%{
 										for(source in sources) {
 									%}
@@ -95,15 +98,19 @@ $(function () {
 								
 								<br />
 															
-								<div class="clearfix sortable-container">							
-									<!-- i style="font-size: 36pt;" class="fa fa-thumbs-o-up"></i-->
-									<ol id="source-bias-like-container" class="connected-sortables">
-										
-									</ol>
-									<!-- i class="fa fa-thumbs-o-down" style="font-size: 36pt;"></i-->
-									<ul id="source-bias-ignore-container" class="connected-sortables">
-										
-									</ul>
+								<div class="col-md-12">
+									<div class="col-md-6">
+										<i style="font-size: 36pt;" class="fa fa-thumbs-o-up"></i>
+										Your sortable list of sources you like.
+									</div>
+									<div class="col-md-6">
+										<i class="fa fa-thumbs-o-down" style="font-size: 36pt;"></i>
+										Blacklist for sources (not sortable).
+									</div>
+								</div>
+								<div class="clearfix sortable-container col-md-12">							
+									<ol id="source-bias-like-container" class="connected-sortables col-md-6"></ol>
+									<ul id="source-bias-ignore-container" class="connected-sortables col-md-6"></ul>
 								</div>
 							</div>
 							<div style="text-align:right;">
