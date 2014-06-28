@@ -15,4 +15,8 @@ public class Account extends Secure.Security {
     public static void register() {
     	render();
     }
+    
+    public static void registerAndSubscribe() {
+    	register();
+    }
 }

@@ -69,7 +69,11 @@ public class Paperize extends Controller {
 	    		}
 	    	}
 	    	
-	    	redirect("/");
+	    	if (Secure.Security.isConnected()) {
+	    		redirect("Account.selectModel()", new Object[] { });
+	    	} else {	    		
+	    		Account.registerAndSubscribe();
+	    	}
     	}
     }
 }
