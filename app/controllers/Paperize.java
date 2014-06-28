@@ -1,8 +1,14 @@
 package controllers;
 
 import play.mvc.*;
+import play.mvc.Http.Cookie;
 
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.SecureRandom;
 import java.util.*;
+
+import com.ning.http.client.Response;
 
 import models.*;
 
@@ -52,7 +58,16 @@ public class Paperize extends Controller {
 	    		sourceBias.put(Integer.parseInt(ignoreSourceIds[i].substring(7)), -1);
 	    	}
 	
-	    	Subscription newSubscription = new Subscription(null, null, new Date());
+	    	//Get user if connected
+	    	User user = User.find("email", Secure.Security.connected()).first();
+	    	//Create random string
+			SecureRandom random = new SecureRandom();
+	    	String anonymousUser = new BigInteger(130, random).toString(32);
+	    	
+	    	//Either create subscription with user or anonymousUser (identified by cookie with random string)
+	    	 Subscription newSubscription = user != null ?
+	    			 new Subscription(user, null, new Date())
+	    	 		: new Subscription(anonymousUser, null, new Date());
 	    	newSubscription.save();
 	    	
 	    	for (int prefId : preferenceIds) {
@@ -68,10 +83,14 @@ public class Paperize extends Controller {
 		    		bias.save();
 	    		}
 	    	}
-	    	
-	    	if (Secure.Security.isConnected()) {
+	    		    	   
+	    	if (user != null) {
 	    		redirect("Account.selectModel()", new Object[] { });
-	    	} else {	    		
+	    	} else {	    
+	    		Cookie cookie = new Cookie();
+	    		cookie.name = "AnonymousUserId";
+	    		cookie.value = anonymousUser;
+	    		response.cookies.put("AnonymousUserId", cookie);
 	    		Account.registerAndSubscribe();
 	    	}
     	}

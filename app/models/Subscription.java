@@ -24,4 +24,10 @@ public class Subscription extends Model {
 		this.subscriptionModel = subscriptionModel;
 		this.dateStarted = dateStarted;
 	}
+	
+	public Subscription(String anonymousUser, SubscriptionModel subscriptionModel, Date dateStarted) {
+		this.anonymousUser = anonymousUser;
+		this.subscriptionModel = subscriptionModel;
+		this.dateStarted = dateStarted;
+	}
 }
