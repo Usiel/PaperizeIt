@@ -20,7 +20,7 @@
 												Date
 											</th>
 											<th>
-												Deliveries
+												Delivered Magazines / Deliveries
 											</th>
 											<th>
 											</th>
@@ -28,7 +28,7 @@
 										#{list items:subs, as:'sub'}
 											<tr>
 												<td>${sub.dateStarted.format('dd MMMM yyyy')}</td>
-												<td>${sub.subscriptionModel.deliveries}</td>
+												<td>${sub.deliveredIssues} / ${sub.subscriptionModel.deliveries}</td>
 												<td><a href="@{Account.showmodel(sub.id)}">Details</a></td>
 											</tr>
 										#{/list}

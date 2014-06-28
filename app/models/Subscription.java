@@ -19,6 +19,8 @@ public class Subscription extends Model {
 	
 	public Date dateStarted;
 	
+	public Integer deliveredIssues;
+	
 	@OneToMany(mappedBy="subscription")
     public List<SourceBias> sourceBias;
 	
@@ -30,11 +32,13 @@ public class Subscription extends Model {
 		this.anonymousUser = anonymousUser;
 		this.subscriptionModel = subscriptionModel;
 		this.dateStarted = dateStarted;
+		this.deliveredIssues = 0;
 	}
 	
 	public Subscription(String anonymousUser, SubscriptionModel subscriptionModel, Date dateStarted) {
 		this.anonymousUser = anonymousUser;
 		this.subscriptionModel = subscriptionModel;
 		this.dateStarted = dateStarted;
+		this.deliveredIssues = 0;
 	}
 }

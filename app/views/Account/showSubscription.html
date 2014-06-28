@@ -16,8 +16,10 @@
 								<div class="description">
 									<h3>Subscription</h3>
 									<p>
-										<strong>${sub.subscriptionModel.deliveries}</strong> deliveries, starting from <strong>${sub.dateStarted.format('dd MMMM yyyy')}</strong>.
+										<strong>${sub.subscriptionModel.deliveries}</strong> deliveries, starting from <strong>${sub.dateStarted.format('dd MMMM yyyy')}</strong>. ${sub.deliveredIssues} magazines delivered.
 										<br />
+										<br />
+										<h4>Address</h4>
 										${sub.user.firstName} ${sub.user.lastName}
 										<br />
 										${sub.user.street}
@@ -51,7 +53,7 @@
 								<br />						
 								<hr />
 								<div style="text-align: right;">
-									<a href="@{Paperize.index()}" class="button btn-success">Home</a>
+									<a href="/" class="button btn-success">Home</a>
 								</div>
 							</div>
 						</div>
