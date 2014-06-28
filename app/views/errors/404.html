@@ -1,19 +1,24 @@
-<!DOCTYPE html>
+#{extends 'main.html' /}
+#{set title:'Error' /}
 
-<html>
-    <head>
-        <title>Not found</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=${_response_encoding}"/>    
-    </head>
-    <body>
-        #{if play.mode.name() == 'DEV'}
-            #{404 result /}
-        #{/if}
-        #{else}
-            <h1>Not found</h1>
-            <p>
-                ${result.message}
-            </p>
-        #{/else}
-    </body>
-</html>
+
+<div id="portfolio">
+	<div id="showcase">
+			<div class="container">
+				<div class="row header">
+					<div class="col-md-12">
+						<h1>404</h1>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="project">													
+								<div class="description">
+									The page you requested does not exist.
+								</div>		
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+</div>
