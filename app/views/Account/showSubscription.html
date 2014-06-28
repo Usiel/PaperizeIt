@@ -1,0 +1,61 @@
+#{extends 'main.html' /}
+#{set title:'Your subscription' /}
+
+
+<div id="portfolio">
+	<div id="showcase">
+			<div class="container">
+				<div class="row header">
+					<div class="col-md-12">
+						<h1>This is your Subscription</h1>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="project">													
+								<div class="description">
+									<h3>Subscription</h3>
+									<p>
+										<strong>${sub.subscriptionModel.deliveries}</strong> deliveries, starting from <strong>${sub.dateStarted.format('dd MMMM yyyy')}</strong>.
+										<br />
+										${sub.user.firstName} ${sub.user.lastName}
+										<br />
+										${sub.user.street}
+										<br />
+										${sub.user.postalCode} ${sub.user.town}
+									</p>
+									<h3>Interesting topics</h3>
+									<ul>
+										#{list items:sub.preferences, as:'preference'}
+										    <li>${preference.preference.name}</li>
+										#{/list}
+									</ul>
+									<br />
+									
+									<hr />
+									
+									<h3>Sources you like</h3>
+									<ol>
+										#{list items:sub.sourceBias.findAll{ bias->bias.bias > 0 }.sort{ bias->bias.bias * (-1) }, as:'bias'}
+											<li>${bias.source.name}</li>
+										#{/list}
+									</ol>
+									
+									<h3>Sources you don't want us to use</h3>
+									<ul>
+										#{list items:sub.sourceBias.findAll{ bias->bias.bias == -1 }, as:'bias'}
+											<li>${bias.source.name}</li>
+										#{/list}
+									</ul>
+								</div>		
+								<br />						
+								<hr />
+								<div style="text-align: right;">
+									<a href="@{Paperize.index()}" class="button btn-success">Home</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+</div>

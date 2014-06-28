@@ -4,7 +4,9 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
+import controllers.Secure.Security;
 import models.Subscription;
 import models.SubscriptionModel;
 import models.User;
@@ -21,15 +23,12 @@ public class Account extends Secure.Security {
         return user != null && 
         		user.password.equals(User.HashPassword(password, user.salt));
     }
+
     
     public static void register() {
     	render();
     }
-    
-    public static void registerAndSubscribe() {
-    	register();
-    }
-    
+
     public static void registerPost(@Required String firstname, @Required String lastname, @Required String salutation, 
     		@Required String dateOfBirth, @Required String street, @Required String postalCode, @Required String town, 
     		@Required String email, @Required String password, @Required String passwordRepeat) {
@@ -59,14 +58,16 @@ public class Account extends Secure.Security {
     		sub.user = newUser;
     		sub.save();
     		
-    		render("Account/selectModel.html");
+    		selectModel();
     	} else {
-    		redirect("Account.index()", new Object[] { });
+    		redirect("Account.index", new Object[] { });
     	}
     }
     
     public static void index() {
-    	render();
+    	User user = User.find("email", Security.connected()).first();
+    	List<Subscription> subs = Subscription.find("user_id", user.id).fetch();
+    	render(subs);
     }
     
     public static void selectModel() {
@@ -91,13 +92,22 @@ public class Account extends Secure.Security {
     	
     	User user = User.find("email", Secure.Security.connected()).first();
     	
-    	Subscription sub = Subscription.find("user_id", user.id).first();
-    	
+    	Cookie subscriptionCookie = request.cookies.get("NewSubscription");
+		//Attach subscription to user
+		Subscription sub = Subscription.find("anonymousUser", subscriptionCookie.value).first();
+	
     	sub.subscriptionModel = subModel;
     	sub.save();
     	
+    	render("Account/showSubscription.html", sub);
+    }
+    
+    public static void showModel(@Required long subscriptionId) throws Throwable {
+    	Subscription sub = Subscription.findById(subscriptionId);
+    	if (!sub.user.email.equals(Security.connected())) {
+    		render("Secure/login.html");
+    	}
     	
-    	
-    	render("selectModelSuccess", sub);
+    	render("Account/showSubscription.html", sub);
     }
 }

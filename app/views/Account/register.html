@@ -3,7 +3,10 @@
 
 <script type="text/javascript">
 	$(function () {
-		$('.datepicker').datepicker();
+		$('.datepicker').datepicker({
+			changeMonth: true,
+			changeYear: true
+		});
 	});
 </script>
 
@@ -24,6 +27,8 @@
 							    #{ifErrors}
 							        <p class="alert alert-danger">
 							            All fields are required!
+         							    <br />
+         							    #{error 'EmailInUse' /}
 							        </p>
 							    #{/ifErrors}		
 																							

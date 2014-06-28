@@ -85,15 +85,16 @@ public class Paperize extends Controller {
 		    		bias.save();
 	    		}
 	    	}
+	    	
+    		Cookie cookie = new Cookie();
+    		cookie.name = "NewSubscription";
+    		cookie.value = anonymousUser;
+    		response.cookies.put("NewSubscription", cookie);
 	    		    	   
 	    	if (user != null) {
-	    		redirect("Account.selectModel()", new Object[] { });
+	    		redirect("Account.selectModel", new Object[] { });
 	    	} else {	    
-	    		Cookie cookie = new Cookie();
-	    		cookie.name = "NewSubscription";
-	    		cookie.value = anonymousUser;
-	    		response.cookies.put("NewSubscription", cookie);
-	    		Account.registerAndSubscribe();
+	    		redirect("Account.register", new Object[] { });
 	    	}
     	}
     }

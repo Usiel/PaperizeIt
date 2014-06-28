@@ -1,0 +1,42 @@
+#{extends 'main.html' /}
+#{set title:'Your subscription' /}
+
+
+<div id="portfolio">
+	<div id="showcase">
+			<div class="container">
+				<div class="row header">
+					<div class="col-md-12">
+						<h1>Your subscriptions</h1>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="project">													
+								<div class="description">
+									<table class="table">
+										<tr>
+											<th>
+												Date
+											</th>
+											<th>
+												Deliveries
+											</th>
+											<th>
+											</th>
+										</tr>
+										#{list items:subs, as:'sub'}
+											<tr>
+												<td>${sub.dateStarted.format('dd MMMM yyyy')}</td>
+												<td>${sub.subscriptionModel.deliveries}</td>
+												<td><a href="@{Account.showmodel(sub.id)}">Details</a></td>
+											</tr>
+										#{/list}
+									</table>
+								</div>		
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+</div>

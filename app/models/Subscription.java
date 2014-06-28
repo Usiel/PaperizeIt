@@ -19,10 +19,10 @@ public class Subscription extends Model {
 	
 	public Date dateStarted;
 	
-	@OneToMany
+	@OneToMany(mappedBy="subscription")
     public List<SourceBias> sourceBias;
 	
-	@OneToMany
+	@OneToMany(mappedBy="subscription")
 	public List<PreferenceSubscription> preferences;
 	
 	public Subscription(User user, String anonymousUser, SubscriptionModel subscriptionModel, Date dateStarted) {

@@ -57,6 +57,9 @@
 							<li><a href="@{Paperize.index()}#yourpaper">Your Paper</a></li>
 				        </ul>
         			</li>
+					#{if controllers.Account.connected() }
+						<li><a href="@{Account.index()}">My Subscriptions</a></li>
+       				#{/if}					
         			<li>
 						#{if controllers.Account.connected() }
                    			<a href="@{Secure.logout()}">Log out</a>

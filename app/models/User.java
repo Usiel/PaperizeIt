@@ -69,4 +69,10 @@ public class User extends Model {
         
         return generatedPassword;		
 	}
+	
+	public static void GenerateUsers() {
+		User testAccount = new User("test@paperize.it", "test", "John", "Doe", new Date(1980, 10, 12), "Mainstreet 2", "5893", "Randomtown", "Mr.");
+		
+		testAccount.save();
+	}
 }

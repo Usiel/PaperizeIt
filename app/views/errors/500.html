@@ -1,21 +1,34 @@
-<!DOCTYPE html>
+#{extends 'main.html' /}
+#{set title:'Error' /}
 
-<html>
-    <head>
-        <title>Application error</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=${_response_encoding}"/>	
-    </head>
-    <body>
-        #{if play.mode.name() == 'DEV'}
-            #{500 exception /}
-        #{/if}
-        #{else}
-            <h1>Oops, an error occured</h1>
-            #{if exception instanceof play.exceptions.PlayException}
-                <p>
-                    This exception has been logged with id <strong>${exception.id}</strong>.
-                </p>
-            #{/if}
-        #{/else}
-    </body>
-</html>
+
+<div id="portfolio">
+	<div id="showcase">
+			<div class="container">
+				<div class="row header">
+					<div class="col-md-12">
+						<h1>404</h1>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="project">													
+								<div class="description">
+							        #{if play.mode.name() == 'DEV'}
+							            #{500 exception /}
+							        #{/if}
+							        #{else}
+							            <h1>Oops, an error occured</h1>
+							            #{if exception instanceof play.exceptions.PlayException}
+							                <p>
+							                    This exception has been logged with id <strong>${exception.id}</strong>.
+							                </p>
+							            #{/if}
+							        #{/else}
+								</div>		
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+</div>
