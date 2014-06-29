@@ -18,4 +18,18 @@ public class Paperize extends Controller {
     public static void index() {
         render();
     }
+
+
+	public static void contactus () {
+		render();
+	}
+
+	public static void jobs () {
+		render();
+	}
+	
+	public static void blog () {
+		render();
+	}
+	
 }
