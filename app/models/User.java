@@ -18,8 +18,11 @@ public class User extends Model {
 	
 	public String password;
 	public String salt;
+	public String verifyEmailToken;
+	public String resetPasswordToken;
+	public Date passwordLost;
+	public Date dateEmailVerified;
 	
-	@Required
 	public String firstName;
 	public String lastName;
 	public Date dateOfBirth;
@@ -28,6 +31,7 @@ public class User extends Model {
 	public String postalCode;
 	public String town;
 	public String salutation;
+	
 	
 	
 	public User(String email, String password, String firstName, String lastName, Date dateOfBirth, String street, String postalCode, String town, String salutation) {
@@ -41,6 +45,7 @@ public class User extends Model {
 		this.postalCode = postalCode;
 		this.town = town;
 		this.salutation = salutation;
+		this.verifyEmailToken = GetSalt();
 	}
 	
 	public static String GetSalt() {

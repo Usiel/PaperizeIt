@@ -1,0 +1,9 @@
+#{extends 'Mails/main_mails.html' /}
+#{set title:'Verify your account' /}
+
+<p>
+	Click on the link below to verify your e-mail address on paperize.
+</p>
+<p>
+	<a href="@@{Account.verifyEmail}?verifyEmailToken=${user.verifyEmailToken}">Click here to continue!</a>
+</p>

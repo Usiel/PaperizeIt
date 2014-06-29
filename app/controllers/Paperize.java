@@ -85,11 +85,8 @@ public class Paperize extends Controller {
 		    		bias.save();
 	    		}
 	    	}
-	    	
-    		Cookie cookie = new Cookie();
-    		cookie.name = "NewSubscription";
-    		cookie.value = anonymousUser;
-    		response.cookies.put("NewSubscription", cookie);
+
+    		response.setCookie("NewSubscription", anonymousUser);
 	    		    	   
 	    	if (user != null) {
 	    		redirect("Account.selectModel", new Object[] { });

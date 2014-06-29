@@ -2,6 +2,27 @@
 #{set title:'Login' /}
 
 <script type="text/javascript">
+	$(function () {
+		$('#lost-password-button').click(function (e) {
+			e.preventDefault();
+			
+			if ($('input[type=email]').val() == '') {
+				alert("Please enter your e-mail address");
+			} else {
+				$.ajax({
+					  type: 'POST',
+					  url: $(this).prop('href'),
+					  data: { email: $('input[type=email]').val() }
+					})
+				  .done(function() {
+					    alert( "An e-mail with a password reset link has been sent to your email address" );
+					  })
+				  .fail(function() {
+				    alert( "No such e-mail found" );
+				  });
+			}
+		});
+	});
 </script>
 
 <div id="portfolio">
@@ -30,6 +51,7 @@
 									<input type="checkbox" checked name="remember" style="display: none;" />
 									<button type="submit" class="button-clear" style="padding: 14px; margin-right: 20px;">Login</button>
 									<a href="@{Account.register()}" class="button btn-success">Register</a>
+									<a href="@{Account.lostPassword()}" id="lost-password-button">Lost password</a>
 								</div>
 							#{/form}
 						</p>

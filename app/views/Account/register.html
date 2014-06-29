@@ -5,8 +5,28 @@
 	$(function () {
 		$('.datepicker').datepicker({
 			changeMonth: true,
-			changeYear: true
+			changeYear: true,
+			minDate: "-100y",
+			maxDate: "-18y"
+			//yearRange: "1900:" + (new Date().getFullYear() - 18)
 		});
+		
+		$('#submit-registration-form-button').click(function (e) {
+			$('#register-form').submit();
+		});
+		var modalShown = false;
+		#{ifErrors}
+			modalShown = true;
+		#{/ifErrors}
+		
+		$('#register-form').submit(function (e) {
+			if (!modalShown) {
+				e.preventDefault();
+			}
+			modalShown = true;
+			$('#verify-email-modal').modal();
+		})
+		
 	});
 </script>
 
@@ -19,7 +39,7 @@
 						<h4>In order to continue and order your individual paperized magazine, please fill out the following information and create an account.</h4>
 					</div>
 				</div>
-				#{form @Account.registerPost(), class: "form-horizontal" }
+				#{form @Account.registerPost(), class: "form-horizontal", id: "register-form" }
 					<div class="row">
 						<div class="col-md-12">
 							<div class="project">
@@ -89,4 +109,23 @@
 				#{/form}
 			</div>
 		</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="verify-email-modal" tabindex="-1" role="dialog" aria-labelledby="verify-email-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Please verify your e-mail</h4>
+      </div>
+      <div class="modal-body">
+        Please make sure to verify your e-mail address, by checking your e-mail inbox for an e-mail from paperize.
+        <br />
+        You can continue your subscription process, but before you can login you have to verify your e-mail!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="submit-registration-form-button">OK! Continue</button>
+      </div>
+    </div>
+  </div>
 </div>

@@ -145,3 +145,11 @@
 	height: 250px;
 	margin-bottom: 30px;
 }
+
+#lost-password-button {
+	margin-left: 20px;
+}
+
+.ui-datepicker-title select {
+	color: black;
+}
