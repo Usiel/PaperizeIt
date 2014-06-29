@@ -32,4 +32,8 @@ public class Paperize extends Controller {
 		render();
 	}
 	
+	public static void pricing () {
+		render();
+	}
+	
 }
