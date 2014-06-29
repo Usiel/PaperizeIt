@@ -21,6 +21,8 @@ public class Subscription extends Model {
 	
 	public Integer deliveredIssues;
 	
+	public Date dateCanceled;
+	
 	@OneToMany(mappedBy="subscription")
     public List<SourceBias> sourceBias;
 	

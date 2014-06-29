@@ -68,62 +68,12 @@ public class Account extends Secure.Security {
     		sub.user = newUser;
     		sub.save();
     		
-    		selectModel();
+    		redirect("Subscription.selectModel", new Object[] { });
     	} else {
-    		redirect("Account.index", new Object[] { });
+    		redirect("Subscription.index", new Object[] { });
     	}
     }
-    
-    public static void index() {
-    	if (!Security.isConnected()) {
-    		redirect("/login");
-    	}
-    	
-    	User user = User.find("email", Security.connected()).first();
-    	List<Subscription> subs = Subscription.find("user_id", user.id).fetch();
-    	render(subs);
-    }
-    
-    public static void selectModel() {
-    	render();
-    }
-    
-    public static void selectModelPost(@Required String model) {
-    	if (validation.hasErrors()) {
-    		render("Account/selectModel.html");
-    	}
-    	
-    	SubscriptionModel subModel;
-    	
-    	if (model.equals("full")) {
-    		subModel = SubscriptionModel.find("name", "full").first();
-    	} else if (model.equals("trial")) {
-    		subModel = SubscriptionModel.find("name", "trial").first();
-    	}
-    	else {
-    		subModel = SubscriptionModel.find("name", "preview").first();
-    	}
-    	
-    	User user = User.find("email", Secure.Security.connected()).first();
-    	
-    	Cookie subscriptionCookie = request.cookies.get("NewSubscription");
-    	response.removeCookie("NewSubscription");
-		Subscription sub = Subscription.find("anonymousUser", subscriptionCookie.value).first();
-		
-    	sub.subscriptionModel = subModel;
-    	sub.save();
-    	
-    	render("Account/showSubscription.html", sub);
-    }
-    
-    public static void showModel(@Required long subscriptionId) throws Throwable {
-    	Subscription sub = Subscription.findById(subscriptionId);
-    	if (!sub.user.email.equals(Security.connected())) {
-    		render("Secure/login.html");
-    	}
-    	
-    	render("Account/showSubscription.html", sub);
-    }
+
     
     public static void lostPassword(@Required String email) {
     	if (validation.hasErrors()) {
@@ -177,7 +127,7 @@ public class Account extends Secure.Security {
     	
     	user.save();
     	
-    	redirect("Account.index", new Object[] { });
+    	redirect("Subscription.index", new Object[] { });
     }
     
     public static void verifyEmail(@Required String verifyEmailToken) {
@@ -191,6 +141,6 @@ public class Account extends Secure.Security {
     	user.dateEmailVerified = new Date();
     	user.save();
     	
-    	redirect("Account.index", new Object[] { });
+    	redirect("Subscription.index", new Object[] { });
     }
 }

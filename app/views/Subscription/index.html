@@ -14,7 +14,7 @@
 						<div class="col-md-12">
 							<div class="project">													
 								<div class="description">
-									<a href="@{Paperize.subscribe()}" class="button" style="margin: 10px; padding: 5px;">Create new subscription</a>
+									<a href="@{Subscription.subscribe()}" class="button" style="margin: 10px; padding: 5px;">Create new subscription</a>
 									<table class="table">
 										<tr>
 											<th>
@@ -30,7 +30,7 @@
 											<tr>
 												<td>${sub.dateStarted.format('dd MMMM yyyy')}</td>
 												<td>${sub.deliveredIssues} / ${sub.subscriptionModel.deliveries}</td>
-												<td><a href="@{Account.showmodel(sub.id)}">Details</a></td>
+												<td><a href="@{Subscription.showSubscription(sub.id)}">Details</a></td>
 											</tr>
 										#{/list}
 									</table>
