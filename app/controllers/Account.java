@@ -62,9 +62,12 @@ public class Account extends Secure.Security {
     	Mails.verifyEmail(newUser);
     	
     	Cookie subscriptionCookie = request.cookies.get("NewSubscription");
+    	Subscription sub = null;
     	if (subscriptionCookie != null) {
     		//Attach subscription to user
-    		Subscription sub = Subscription.find("anonymousUser", subscriptionCookie.value).first();
+    		sub = Subscription.find("anonymousUser", subscriptionCookie.value).first();
+    	}
+    	if (sub != null) {
     		sub.user = newUser;
     		sub.save();
     		
