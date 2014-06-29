@@ -24,9 +24,9 @@ public class SourceBias extends Model {
 	public static void GenerateSourceBias() {
 		Subscription sub = (Subscription) Subscription.findAll().get(0);
 		
-		Source src1 = (Source) Source.findAll().get(0);
-		Source src2 = (Source) Source.findAll().get(1);
-		Source src3 = (Source) Source.findAll().get(2);
+		Source src1 = Source.find("name", "spiegel.de").first();
+		Source src2 = Source.find("name", "welt.de").first();
+		Source src3 = Source.find("name", "bild.de").first();
 		
 		SourceBias bias1 = new SourceBias(sub, src1, 2);
 		SourceBias bias2 = new SourceBias(sub, src2, 1);

@@ -23,7 +23,7 @@ public class PreferenceSubscription extends Model {
 	public static void GeneratePreferenceSubscription() {
 		Subscription sub = (Subscription) Subscription.findAll().get(0);
 		Preference pref1 = Preference.find("name", "Sports").first();
-		Preference pref2 = Preference.find("name", "Science").first();
+		Preference pref2 = Preference.find("name", "International").first();
 		PreferenceSubscription ps1 = new PreferenceSubscription(sub, pref1);
 		PreferenceSubscription ps2 = new PreferenceSubscription(sub, pref2);
 		
