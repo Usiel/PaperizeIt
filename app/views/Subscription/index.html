@@ -27,7 +27,7 @@
 											</th>
 										</tr>
 										#{list items:subs, as:'sub'}
-											<tr>
+											<tr class="${sub.dateCanceled != null ? 'deleted-table-row' : ''}">
 												<td>${sub.dateStarted.format('dd MMMM yyyy')}</td>
 												<td>${sub.deliveredIssues} / ${sub.subscriptionModel.deliveries}</td>
 												<td><a href="@{Subscription.showSubscription(sub.id)}">Details</a></td>

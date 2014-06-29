@@ -153,3 +153,17 @@
 .ui-datepicker-title select {
 	color: black;
 }
+
+.paperize-table-padded {
+	padding: 10px;
+	margin-left: 27px;
+	margin-bottom: 20px;
+}
+
+.paperize-table-padded td {
+	padding: 10px;
+}
+
+.deleted-table-row {
+	text-decoration: line-through;
+}

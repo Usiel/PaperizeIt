@@ -15,17 +15,40 @@
 							<div class="project">													
 								<div class="description">
 									<h3>Subscription</h3>
-									<p>
-										<strong>${sub.subscriptionModel.deliveries}</strong> deliveries, starting from <strong>${sub.dateStarted.format('dd MMMM yyyy')}</strong>. ${sub.deliveredIssues} magazines delivered.
-										<br />
-										<br />
-										<h4>Address</h4>
-										${sub.user.firstName} ${sub.user.lastName}
-										<br />
-										${sub.user.street}
-										<br />
-										${sub.user.postalCode} ${sub.user.town}
-									</p>
+									
+									#{if sub.dateCanceled != null}
+								        <p class="alert alert-danger">
+								            This subscription has been canceled on ${sub.dateCanceled.format('dd MMMM yyyy')}!
+								        </p>
+							        #{/if}
+									
+									<table class="table-bordered paperize-table-padded">
+										<tr>
+											<td>Deliveries</td>
+											<td>${sub.subscriptionModel.deliveries}</td>
+										</tr>
+										<tr>
+											<td>Delivered magazines</td>
+											<td>${sub.deliveredIssues}</td>
+										</tr>
+										<tr>
+											<td>Start Date</td>
+											<td>${sub.dateStarted.format('dd MMMM yyyy')}</td>
+										</tr>
+										<tr>
+											<td>Name</td>
+											<td>${sub.user.firstName} ${sub.user.lastName}</td>
+										</tr>
+										<tr>
+											<td>Street</td>
+											<td>${sub.user.street}</td>
+										</tr>
+										<tr>
+											<td>Town</td>
+											<td>${sub.user.postalCode} ${sub.user.town}</td>
+										</tr>
+									</table>
+
 									<h3>Interesting topics</h3>
 									<ul>
 										#{list items:sub.preferences, as:'preference'}
@@ -53,6 +76,9 @@
 								<br />						
 								<hr />
 								<div style="text-align: right;">
+									#{if sub.dateCanceled == null}
+										<a href="@{Subscription.cancelSubscription(sub.id)}" style="margin-right: 10px;" onClick="return confirm('Are you sure you want to cancel this subscription?');">Cancel subscription</a>
+									#{/if}
 									<a href="/" class="button btn-success">Home</a>
 								</div>
 							</div>

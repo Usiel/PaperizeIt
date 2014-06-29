@@ -151,4 +151,16 @@ public class Subscription extends Controller {
     	
     	render("Subscription/showSubscription.html", sub);
     }
+    
+    public static void cancelSubscription(@Required long subscriptionId) {
+    	models.Subscription sub = models.Subscription.findById(subscriptionId);
+    	if (!sub.user.email.equals(Security.connected())) {
+    		render("Secure/login.html");
+    	}
+    	
+    	sub.dateCanceled = new Date();
+    	sub.save();
+    	
+    	render("Subscription/showSubscription.html", sub);
+    }
 }
