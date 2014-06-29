@@ -1,0 +1,70 @@
+<paper>
+	<!-- paper's details-->
+	<title>Your Paperize.it Paper</title>
+	<date>${(newsPaperDate).format('dd.MM.yyyy')}</date>
+	<paperizelogo>paperize_logo.png</paperizelogo>
+	<signature>http://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Angela_Merkel_Signature.svg/500px-Angela_Merkel_Signature.svg.png</signature>
+	
+	<!-- recipient -->
+	<recipient>
+		<salutation>${(recipient.salutation)}</salutation>
+		<lastname>${(recipient.lastName)}</lastname>
+		<firstname>${(recipient.firstName)}</firstname>
+		<street>${(recipient.street)}</street>
+		<zip>${(recipient.postalCode)}</zip>
+		<city>${(recipient.town)}</city>
+		<stamp>stamp.png</stamp>
+	</recipient>
+	
+	<!-- topics -->
+	<topics>
+	%{
+			for(ps in preferences) {	
+		}%
+		<topic><name>${(ps.preference.name)}</name></topic>
+	%{
+		} 
+	
+	}%
+	</topics>
+	<!-- articles in this paper.
+	-->
+	<articles>
+		<titlearticle>
+			<title>${(titleArticle.title)}</title>
+			<imgsrc>${(titleArticle.imgSrc)}</imgsrc>
+		</titlearticle>
+		
+		%{
+			for(article in articles) {
+				
+		}%
+			<article>
+				<title>
+					${article.title.raw()}
+				</title>
+				<imgsrc>
+					${article.imgSrc}
+				</imgsrc>
+				<intro>
+					${article.intro.raw()}
+				</intro>
+				<content>
+					${article.content.raw()}
+				</content>
+				<date>
+					${(article.date).format('dd.MM.yyyy')}
+				</date>
+				<srcurl>
+					${article.srcUrl}
+				</srcurl>
+				<paper>
+					${article.source.name}
+				</paper>
+			</article>
+		%{
+			}
+		}%
+		
+	</articles>
+</paper>

@@ -1,0 +1,118 @@
+<paper>
+	<!-- paper's details-->
+	<title>Your Paperize.it Paper</title>
+	<date>30.06.2014</date>
+	<paperizelogo>paperize_logo.png</paperizelogo>
+	<signature>http://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Angela_Merkel_Signature.svg/500px-Angela_Merkel_Signature.svg.png</signature>
+	
+	<!-- recipient -->
+	<recipient>
+		<salutation>Mr.</salutation>
+		<lastname>Doe</lastname>
+		<firstname>John</firstname>
+		<street>Mainstreet 2</street>
+		<zip>5893</zip>
+		<city>Randomtown</city>
+		<stamp>stamp.png</stamp>
+	</recipient>
+	
+	<!-- topics -->
+	<topics>
+			<topic><name>Sports</name></topic>
+			<topic><name>International</name></topic>
+		</topics>
+	<!-- articles in this paper.
+	-->
+	<articles>
+		<titlearticle>
+			<title>Offensive im Irak: ISIS-Extremisten rufen Islamisches Kalifat aus</title>
+			<imgsrc>demo1.jpg</imgsrc>
+		</titlearticle>
+		
+					<article>
+				<title>
+					Offensive im Irak: ISIS-Extremisten rufen Islamisches Kalifat aus
+				</title>
+				<imgsrc>
+					demo1.jpg
+				</imgsrc>
+				<intro>
+					Es ist eine neue Demonstration der Macht: Die ISIS-Dschihadisten haben einen Staat mit islamischer Regierungsform ausgerufen. Befehlshaber des "Kalifats" sei ihr Anführer Abu Bakr al-Baghdadi.
+				</intro>
+				<content>
+					Hamburg/Bagdad - Die Dschihadistengruppe Islamischer Staat im Irak und in Großsyrien (ISIS) hat ein "Kalifat" ausgerufen. In einer am Sonntag im Internet veröffentlichten Audiobotschaft verkündete die Organisation die Schaffung dieser vor fast hundert Jahren verschwundenen islamischen Regierungsform.
+
+ISIS veröffentlichte ihre Erklärung in mehreren Sprachen - neben Arabisch auf Englisch, Russisch, Französisch und Deutsch. Ein deutliches Zeichen dafür, dass die Dschihadisten über die Grenzen Syriens und des Irak hinaus an die Macht wollen. Deshalb hat die Gruppe auch ihren Namen offiziell geändert. Künftig heiße es nicht mehr "Islamischer Staat im Irak und in Syrien", sondern nur noch "Islamischer Staat".
+
+Anführer des Staates sei Abu Bakr al-Baghdadi, der Anführer der Dschihadisten. Als Kalif sei er fortan Befehlshaber der Gläubigen und oberster Führer des Staates. Das Wort Kalif bedeutet im Arabischen "Nachfolger" - Baghdadi sieht sich also als Nachfolger des Propheten Mohammed an der Spitze der islamischen Gemeinschaft.
+
+Widerspruch duldet das Kalifat nicht: In der Erklärung ruft der Islamische Staat alle Muslime auf, Baghdadi die Treue zu schwören. Alle, die dieser Forderung nicht Folge leisteten, würden als Abtrünnige behandelt und bekämpft.
+
+Kampf um Tikrit
+
+Der Zeitpunkt der Erklärung ist nicht zufällig gewählt: An diesem Wochenende hat der islamische Fastenmonat Ramadan begonnen, der wichtigste Monat im islamischen Kalender.
+
+Die ISIS hatte am 9. Juni eine Offensive gegen die Regierung in Bagdad begonnen. Die radikale Sunnitengruppe brachte seitdem große Teile des Nordirak unter ihre Kontrolle. Die Dschihadisten kämpfen auch im benachbarten Syrien gegen die dortige Regierung. Ihr Ziel war stets die Gründung eines grenzübergreifenden islamischen Staates in der Region.
+
+Der syrische Arm des Terrornetzwerks al-Qaida - die Al-Nusra-Front - und andere islamistische Rebellen in Syrien haben nach Angaben der Syrischen Beobachtungsstelle für Menschenrechte vom Samstag einen Gegenangriff auf ISIS gestartet.
+
+Auch die irakische Armee hatte am Samstag eine Großoffensive gegen ISIS in der irakischen Stadt Tikrit begonnen - die islamistischen Kämpfer konnten sich jedoch offenbar erfolgreich wehren. Die Regierungstruppen haben sich laut einem BBC-Bericht in die Vorstadt Dijla, 25 Kilometer südlich von Tikrit, zurückgezogen. Es habe heftige Gefechte mit vielen Toten auf beiden Seiten gegeben, berichteten demnach Augenzeugen und Journalisten.
+
+Mit der Rückeroberung der Stadt will das irakische Militär den ISIS-Vormarsch auf Bagdad stoppen. Tikrit liegt rund 140 Kilometer nordwestlich von Bagdad und ist neben Mossul eine der größten Städte in der Hand von ISIS.
+
+Irakischer General für Teilung des Landes
+
+Der Leiter des irakischen Krisenstabs im Kampf gegen die ISIS-Dschihadisten, General Ali al-Saidi, hat sich unterdessen für die Aufteilung des Landes in autonome Teilgebiete ausgesprochen. Schiiten, Sunniten und Kurden sollten jeweils ihre eigene Region erhalten, sagte der schiitische General der "Welt am Sonntag". Das sei "die einzige Lösung", um der Dschihadistengruppe ISIS den Rückhalt bei der sunnitischen Minderheit zu entziehen. "Natürlich können sie nicht, wie früher, den gesamten Irak regieren, aber zumindest sich selbst", sagte der General.
+
+Al-Saidi kritisierte, dass die Sunniten seit dem Sturz von Machthaber Saddam Hussein zu weit marginalisiert worden seien - dieser Vorwurf ist auch gegen den irakischen Ministerpräsident Nuri al-Maliki gemünzt: Kritiker werfen ihm vor, die Sunniten auszugrenzen und so den Vormarsch von ISIS zu begünstigen. Maliki hatte sich bisher auch immer wieder gegen eine Einheitsregierung aus Schiiten, Sunniten und Kurden ausgesprochen.
+				</content>
+				<date>
+					30.06.2014
+				</date>
+				<srcurl>
+					http://www.spiegel.de/politik/ausland/irak-isis-extremisten-rufen-islamisches-kalifat-aus-a-978202.html
+				</srcurl>
+				<paper>
+					spiegel.de
+				</paper>
+			</article>
+					<article>
+				<title>
+					Entzauberter Präsident der Ukraine
+				</title>
+				<imgsrc>
+					demo2.jpg
+				</imgsrc>
+				<intro>
+					Es wird weiter gekämpft und gestorben in der Ostukraine, der Friedensplan von Präsident Poroschenko scheitert. In der Ukraine werden jetzt Stimmen laut, die einen regulären Krieg gegen Separatisten und Russen fordern. Es gibt aber noch ein zweites Lager - auch das wird stärker.
+				</intro>
+				<content>
+					Petro Poroschenko steht stark unter Druck. Man sieht das schon an der Körpersprache des ukrainischen Präsidenten, der nach seiner Wahl im Mai erst einmal alle Welt mit seinem demonstrativen Optimismus, seinem Teddybärencharme und seinem Friedensplan begeisterte.
+
+Mittlerweile steht er bei öffentlichen Auftritten sehr verspannt da, die Kiefer mahlen, die Hände sind zu Fäusten geballt.
+
+Denn Petro Poroschenkos Plan scheint nicht aufzugehen. Es wird weiter gekämpft und gestorben in der Ostukraine, die Separatisten zeigen sich an keiner Stelle kompromissbereit - wenn man von der symbolischen, aber nicht kriegsentscheidenden Freilassung der zwei OSZE-Teams absieht. Und auch aus Moskau kommt wenig außer symbolischen Gesten. Die konkreten Forderungen aus Poroschenkos Friedensplan jedenfalls, Freigabe von Checkpoints und Grenzübergängen, Abgabe von Waffen und Stopp der Waffenlieferungen - sie sind bisher verpufft.
+
+Alles andere tritt in den Hintergrund:Gespräche über den Schutz der russischen Sprache, über mehr Macht für die Regionen, Lokalwahlen, mehr Finanzautonomie, baldige Parlamentswahlen. Es geht den Separatisten und ihren Hintermännern längst nicht mehr um politische Reformen, um Kompromisse, um die Interessen der Ukrainer, die sie vorzugeben vertreten. Es geht um Landgewinn.
+
+Krieg oder Nachgeben?
+
+Das Verständnis für die einseitige Waffenruhe, die der Ukrainer vor zehn Tagen ausgerufen hatte, war daher im eigenen Land gering gewesen; man hatte sie als politischen Preis für die Versprechungen vor der Wahl und als Geste an Brüssel wie Moskau akzeptiert, nach dem Motto: Vielleicht geht ja doch was, auch wenn das keiner so recht glauben mochte nach der Annexion der Krim und der militärischen Infiltration der Ostukraine.
+
+Nun soll der Waffenstillstand an diesem Montag auslaufen, und in Kiew muss Poroschenko entscheiden: Gibt er den Falken in Armee und Innenministerium nach, die gegen Prorussen und Russen in einen regulären Krieg ziehen wollen? Jene Stimmen werden lauter, die sagen: Wir sind ukrainische Patrioten, wir müssen unser Land retten, wir können nicht auf Brüssel warten, das nur mit sich selbst beschäftigt ist. Dieser Teil der politischen Elite argumentiert damit, die Russen hätten sich in der Ostukraine schon festgesetzt und es sei fast zu spät, den Donbass zurückzugewinnen - wenn man jetzt nicht auf breiter Front hineingehe und kämpfe. Diese Position hat breiten Rückhalt in der Bevölkerung; ihr gilt Poroschenko zunehmend als "lame duck", als einer, der zu viel redet und zu viel gibt. Kein Führer, sondern ein Fürst ohne Land.
+
+Es gibt aber auch ein zweites Lager in der Ukraine, und auch das wird stärker. Intellektuelle sind darunter, aber auch Politiker. Die denken mittlerweile laut die gegenteilige Frage: Vielleicht sollte man den Donbass gehen lassen? Wer sich dort jetzt noch aufhält, will eh zu Russland. Soll Moskau das Stück Land haben, dann kann der Rest der Ukraine in Frieden leben. Auch darauf muss Poroschenko eine Antwort geben.
+				</content>
+				<date>
+					30.06.2014
+				</date>
+				<srcurl>
+					http://www.sueddeutsche.de/politik/petro-poroschenko-entzauberter-praesident-der-ukraine-1.2021946
+				</srcurl>
+				<paper>
+					spiegel.de
+				</paper>
+			</article>
+				
+	</articles>
+</paper>

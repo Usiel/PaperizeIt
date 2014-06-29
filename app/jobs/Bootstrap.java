@@ -1,5 +1,6 @@
 package jobs;
 
+import models.Article;
 import models.Preference;
 import models.PreferenceSubscription;
 import models.Source;
@@ -22,5 +23,6 @@ public class Bootstrap extends Job {
     	Subscription.GenerateSubscriptions();
     	SourceBias.GenerateSourceBias();
     	PreferenceSubscription.GeneratePreferenceSubscription();
+    	Article.GenerateArticles();
     }    
 }
