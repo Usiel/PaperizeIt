@@ -19,6 +19,7 @@ public class SubscriptionModel extends Model {
 		this.deliveries = deliveries;
 	}
 	
+	// For DEMO purposes only
 	public static void GenerateSubscriptionModels() {
 		if (!SubscriptionModel.findAll().isEmpty()) {
 			return;

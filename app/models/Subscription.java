@@ -43,4 +43,11 @@ public class Subscription extends Model {
 		this.dateStarted = dateStarted;
 		this.deliveredIssues = 0;
 	}
+	
+	public static void GenerateSubscriptions() {
+		SubscriptionModel model = SubscriptionModel.find("name", "full").first();
+		User user = User.find("email", "test@paperize.it").first();
+		Subscription sub = new Subscription(user, null, model, new Date());
+		sub.save();
+	}
 }

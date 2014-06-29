@@ -14,6 +14,7 @@ public class Source extends Model {
 		this.description = description;
 	}
 
+	// For DEMO purposes only
 	public static void GenerateSources() {
 		if (!Source.findAll().isEmpty()) {
 			return;
