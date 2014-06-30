@@ -105,7 +105,7 @@ public class Subscription extends Controller {
 	    	if (user != null) {
 	    		redirect("Subscription.selectModel", new Object[] { });
 	    	} else {	    
-	    		redirect("Subscription.register", new Object[] { });
+	    		redirect("Account.register", new Object[] { });
 	    	}
     	}
     }
