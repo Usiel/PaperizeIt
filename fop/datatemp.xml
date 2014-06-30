@@ -3,7 +3,7 @@
 	<title>Your Paperize.it Paper</title>
 	<date>30.06.2014</date>
 	<paperizelogo>paperize_logo.png</paperizelogo>
-	<signature>http://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Angela_Merkel_Signature.svg/500px-Angela_Merkel_Signature.svg.png</signature>
+	<signature>sig_ang_merk.png</signature>
 	
 	<!-- recipient -->
 	<recipient>
@@ -18,17 +18,133 @@
 	
 	<!-- topics -->
 	<topics>
-			<topic><name>Sports</name></topic>
+			<topic><name>Football</name></topic>
 			<topic><name>International</name></topic>
 		</topics>
 	<!-- articles in this paper.
 	-->
 	<articles>
 		<titlearticle>
-			<title>Offensive im Irak: ISIS-Extremisten rufen Islamisches Kalifat aus</title>
-			<imgsrc>demo1.jpg</imgsrc>
+			<title>Deutsch Ersatzbank: Wir müssen draußen bleiben</title>
+			<imgsrc>demo3.jpg</imgsrc>
 		</titlearticle>
 		
+					<article>
+				<title>
+					Deutsch Ersatzbank: Wir müssen draußen bleiben
+				</title>
+				<imgsrc>
+					demo3.jpg
+				</imgsrc>
+				<intro>
+					Das Aufgebot des DFB bei diesem Turnier ist in zwei Teile gespalten. 16 Spieler dürfen auf WM-Einsätze hoffen, den übrigen Sieben bleibt wohl nur der Status eines Bankdrückers. Selten hat sich ein Bundestrainer so auf eine Kernmannschaft konzentriert.
+				</intro>
+				<content>
+					Der Konkurrenzkampf - es ist eines der Lieblingswörter von Bundestrainer Joachim Löw in den vergangenen Monaten gewesen. Er hat bei jeder sich bietenden Gelegenheit darauf hingewiesen, wie eng das Gerangel um die Plätze in der deutschen Startelf bei diesem Turnier sein wird.
+Jetzt sind drei WM-Partien gespielt, und das Thema hat sich extrem relativiert. Der Konkurrenzkampf beschränkt sich auf zwei, drei Positionen - ein Gutteil des 23er-Kaders hat damit gar nichts zu tun. Und darf sich auf seine Rolle als reiner WM-Bankdrücker einrichten.
+Von den 23 Spielern, die Löw mit nach Brasilien genommen hat, haben vor dem Achtelfinale gegen Algerien am Montag (22 Uhr, Liveticker SPIEGEL ONLINE) sieben noch keine WM-Minute absolviert. Und wenn alles normal läuft, wird das bei diesem Turnier auch so bleiben. Das DFB-Aufgebot ist in zwei Teile gespalten, wie es wohl noch nie bei einer WM war. Zwei Drittel, die zur engeren Wahl des Bundestrainers gehören, ein Drittel, das den Kader auffüllt, wenn man es böse ausdrückt.
+
+Sieben im Kader warten auf ihre erste WM-Minute
+
+Roman Weidenfeller, Ron-Robert Zieler, Erik Durm, Kevin Großkreutz, Matthias Ginter, Julian Draxler und Christoph Kramer - es sind diese sieben Profis, die vor allem froh darüber sein können, überhaupt zum Aufgebot zu gehören. Ansprüche auf mehr können sie nicht stellen, und Löw hat sie lediglich als stille Reserve auf dem Zettel.
+
+"Nie war es so wichtig, 14 Spieler auf hohem Niveau zu haben", hoben Löw und Assistent Hans-Dieter Flick in diesen Tagen wiederholt hervor, um angesichts des südamerikanischen Klimas die Bedeutung der Einwechselspieler zu betonen. Dabei denken sie allerdings an Akteure wie Miroslav Klose, Bastian Schweinsteiger oder Lukas Podolski.
+
+Sie sind die erste natürliche Option, wenn es um Spielerwechsel im Lauf der zweiten Spielhälfte geht. Oder um Rotationen in die Startaufstellung. Für die Anderen in der Zweidrittelgesellschaft des DFB bleibt: Auf ein Spiel um den dritten Platz hoffen - gemeinhin die einzige Gelegenheit, auch geduldigen Bankdrückern die Chance zu geben, sie aus dem Status des WM-Touristen zu erlösen.
+
+Dass Weidenfeller und Zieler nur dann eine Einsatzmöglichkeit bekommen würden, wenn Stammkeeper Manuel Neuer angeschlagen oder gesperrt ausfällt, war von vornherein klar. Trotz der Erfahrung Weidenfellers: Die Hierarchie bei der deutschen Nummer eins ist in Beton gegossen. An Neuer kommt keiner vorbei, und die bisherigen Leistungen in der Gruppenphase haben das bestätigt.
+
+Durm ist ein Opfer der Taktik
+
+Aber Weidenfellers Dortmunder Teamkollegen Durm und Großkreutz haben sich wohl schon insgeheim mehr ausgerechnet, als lediglich nach den Spielern ihre Stammelf-Kollegen abzuklatschen und sie während der Partie anzufeuern. Durm galt auf links hinten schon fast als konkurrenzlos, nachdem sein BVB-Konkurrent Marcel Schmelzer aus dem Aufgebot gestrichen worden war. Mittlerweile ist auch deutlich, was Löw zu dieser Entscheidung erwogen hatte. Er hatte da wohl bereits entscheiden, seine Abwehr auf vier Innenverteidiger aufzubauen. Weitere Außenspieler hielt er nicht mehr für notwendig.
+
+Das ist Durms Pech und das Glück des Schalkers Benedikt Höwedes, der dadurch auf diese Position gerückt ist. Wenn in der Abwehr jemand ersetzt werden musste, dann war der gelernte Innenverteidiger und DFB-Neuling Shkodran Mustafi die einzige bisher benutzte Option. Nach Mustafis schwacher Leistung gegen Ghana dürfte Löw für die nächsten Spiele darüber zumindest noch einmal nachdenken. Eventuell könnte dadurch Ginter doch noch auf eine Einsatzchance hoffen.
+
+Die ist für Christoph Kramer und Julian Draxler in weiter Ferne. Draxler steht in der Offensive hinten in der Schlange hinter André Schürrle, hinter Podolski - der allerdings im Achtelfinale gegen die Algerien verletzt aussetzen muss. Und Kramer ist ohnehin nur als Backup vorgesehen, falls entweder Schweinsteiger oder Sami Khedira erneut von einer Verletzung zurückgeworfen werden. Dass der Gladbacher im Gegensatz zu den Etablierten topfit ist, hat ihm zwar in Sachen Nominierung geholfen, aber nicht weiter.
+				</content>
+				<date>
+					30.06.2014
+				</date>
+				<srcurl>
+					http://www.spiegel.de/sport/fussball/nationalmannschaft-dfb-kader-bei-fussball-wm-2014-in-brasilien-von-loew-a-978187.html
+				</srcurl>
+				<paper>
+					spiegel.de
+				</paper>
+			</article>
+					<article>
+				<title>
+					Ordner verbieten deutsche Fanbanner im Stadion
+				</title>
+				<imgsrc>
+					demo6.jpg
+				</imgsrc>
+				<intro>
+					Die Repressionen bei der Fußball-WM 2014 gehen in die nächste Runde. Vor dem Duell mit Algerien gehen Ordner gegen deutsche Fans vor. Ob wieder alles nur ein Missverständnis seitens der Fifa ist?
+				</intro>
+				<content>
+					Es hat ja schon so manche Ungereimtheiten in Sachen Fifa gegeben. Flitzer werden nicht in den offiziellen TV-Bildern gezeigt, Ausschreitungen auch nicht. WM-Gewinne werden steuerfrei aus dem Land geschafft. In den Bannmeilen rund um die Stadien dürfen nur Sponsorenprodukte verkauft werden. Die Weltmeisterschaft soll ein sauberes Bild abgeben. So mancher sagt sogar: ein klinisch-reines Bild.
+
+Da hinein passen keine Bilder, auf die die Fifa keinen Einfluss hat. Vor dem deutschen Spiel gegen Algerien in Porto Alegre fanden die akkreditierten Journalisten einen Hinweis im Briefumschlag mit ihren Spieltickets, dass Handy-Fotos von der Pressetribüne untersagt seien. Eine Begründung lieferte der Weltverband dafür nicht mit.
+
+Auch die deutschen Fans vor Ort sind alles andere als gut zu sprechen auf die Fifa. In den Spielen gegen Ghana und die USA ließ der Verband die Banner der Schlachtenbummler abhängen. Bereits nach dem Ghana-Spiel ließ die Fifa übermitteln, es habe sich um ein "Missverständnis und einen Übermittlungsfehler" gehandelt, Banner und Plakate "werden von uns im Rahmen der bestehenden Regularien zugelassen".
+
+Doch schon gegen die USA marschierte der Ordnungsdienst erneut in die Blöcke und kassierte die harmlosen Plakate ein. Wieder teilte der Weltverband auf "Welt"-Anfrage mit: "Seitens der Fifa gab es keine Anweisungen zur Abnahme der Banner beim Spiel USA gegen Deutschland. Sollte es bei diesem Spiel ebenfalls zu vereinzelten Entfernungen von Bannern gekommen sein, dann sind diese auf die Übereifrigkeit des lokalen Sicherheitsteams zurückzuführen."
+
+Ordner hindern Fans mit Plakaten
+
+"Dafür fehlt mir jegliches Verständnis. Das sind Repressionen, die weder ich noch die anderen Fans hier nachvollziehen können", sagte Daniel Langer aus Berlin, der bislang alle deutschen Spiele live vor Ort verfolgt hat. Alles nur ein Missverständnis?
+				</content>
+				<date>
+					30.06.2014
+				</date>
+				<srcurl>
+					http://www.welt.de/sport/fussball/wm-2014/article129636099/Ordner-verbieten-deutsche-Fanbanner-im-Stadion.html
+				</srcurl>
+				<paper>
+					welt.de
+				</paper>
+			</article>
+					<article>
+				<title>
+					Fritz-Walter-Wetter soll Vorteil für DFB-Elf sein
+				</title>
+				<imgsrc>
+					demo7.jpg
+				</imgsrc>
+				<intro>
+					Bislang war die WM geprägt von großer Hitze, Trinkpausen und Wadenkrämpfen. Ausgerechnet beim Achtelfinale in Porto Alegre herrschen zwölf Grad und Dauerregen. Das kommt der deutschen Elf gelegen.
+				</intro>
+				<content>
+					In der Nacht war es ziemlich heftig. Der Regen hatte sehr unwirsch an die Fensterscheiben der Hotels und Pensionen gepocht und einige deutsche Fans in Porto Alegre aus dem Schlaf gerissen.
+
+Als sie am Morgen danach aufwachten und herausschauten, hatte es sich im Spielort des Achtelfinals gegen Algerien nicht gebessert. Fritz-Walter-Wetter in Brasilien. Was für ein Willkommen! Damit hatten viele nicht gerechnet. Gerade die, die aus dem warmen Norden angereist waren und nur T-Shirts und Trikots dabeihaben.
+
+Hier im Süden des Landes ist es im Winter jedes Jahr recht trüb, doch so oft wie in den vergangenen Tagen hat es lange nicht geregnet. In einigen Dörfern und Städten in der Region bedroht sogar Hochwasser die Existenz einiger Menschen, die lokalen Zeitungen berichten darüber in großen Artikeln.
+
+So schlimm ist es in der Hauptstadt des Bundesstaates zum Glück längst nicht. Meist ist es Niesel- oder schwacher Regen, aber dieser ist eben sehr beständig. Die Ladenbesitzer sind gut drauf: Der Absatz an Regenschirmen ist deutlich gestiegen.
+
+Wetter wie in Hamburg
+
+"Es geht nur noch darum zu gewinnen"
+Am Vormittag ließ der Regen dann vorübergehend nach. Die Fans aus der Bundesrepublik freuten sich und nutzten die trockenen Stunden zum Bummel durch die 1,4-Millionen-Einwohner-Stadt.
+
+Die Sonne ließ sich aber weiterhin nicht blicken – Porto Alegre präsentiert sich von seiner grauen Seite. Laut Vorhersage soll es am Nachmittag trocken bleiben, das Thermometer zeigt zwölf Grad.
+
+Für die deutsche Mannschaft könnte das Wetter eventuell ein Vorteil sein. Es erinnert mehr an Hamburg als an Strand, Samba und Caipirinha. Beim 1:0 gegen die USA in Recife waren die Spieler von Bundestrainer Joachim Löw mit dem starken Regen verhältnismäßig gut zurechtgekommen.
+
+"Es ist auf jeden Fall leichter, von der warmen Region, in der unser Quartier liegt, in eine kältere zu kommen, als umgekehrt", sagt Kapitän Philipp Lahm. "Ob es aber wirklich ein Vorteil für uns ist, das werden wir erst nach dem Spiel sagen können."
+				</content>
+				<date>
+					30.06.2014
+				</date>
+				<srcurl>
+					http://www.welt.de/sport/fussball/wm-2014/article129633625/Fritz-Walter-Wetter-soll-Vorteil-fuer-DFB-Elf-sein.html
+				</srcurl>
+				<paper>
+					welt.de
+				</paper>
+			</article>
 					<article>
 				<title>
 					Offensive im Irak: ISIS-Extremisten rufen Islamisches Kalifat aus
@@ -111,6 +227,92 @@ Es gibt aber auch ein zweites Lager in der Ukraine, und auch das wird stärker. 
 				</srcurl>
 				<paper>
 					spiegel.de
+				</paper>
+			</article>
+					<article>
+				<title>
+					Oberste US-Richter stoppen Teil von Obamacare
+				</title>
+				<imgsrc>
+					demo4.jpg
+				</imgsrc>
+				<intro>
+					Schlappe für US-Präsident Barack Obama: Familienunternehmen müssen ihren Mitarbeiterinnen keine Krankenversicherung bezahlen, in denen auch die umstrittene "Pille danach" abgedeckt ist.
+				</intro>
+				<content>
+					Die Gesundheitsreform Obamacare verletzt die US-Verfassung, weil sie Firmeninhaber entgegen ihren religiösen Überzeugungen zwingt, für Mitarbeiterinnen Krankenversicherungen unter Einschluss bestimmter Formen von Schwangerschaftsabbrüchen zu bezahlen. Das hat der Supreme Court am Montagvormittag (Ortszeit) beschlossen und damit der Gesundheitsreform von Präsident Barack Obama eine Teilniederlage beigebracht.
+
+Kaum war das Urteil gesprochen, hatten sich mehrere Dutzend vorwiegend weibliche Demonstrantinnen vor dem Obersten Gerichtshof versammelt. "Geburtenkontrolle muss bleiben", skandierten sie unter dem etwas bemüht gereimten Motto: "Ho-ho, hey-hey, birth control is here to stay."
+
+Doch es geht bei dem mit fünf zu vier Stimmen äußerst knapp gesprochenen Urteil nicht um Geburtenkontrolle an sich. Die Kläger, nämlich die Familienunternehmen Conestoga Wood, ein Türen- und Möbelhersteller aus Pennsylvania, und Hobby Lobby, ein Kunsthandwerksbetrieb in Oklahoma, sahen vielmehr ihr Recht auf Religionsfreiheit durch ein spezifisches Kapitel von Obamacare ausgehebelt.
+
+Unternehmer wollen nicht für "Sünden" zahlen
+
+Im Kern ging es um die Frage: Dürfen Firmen, deren Inhaber Abtreibung als Sünde verstehen, gezwungen werden, für ihre Angestellten Versicherungen zu zahlen, in denen derartige Maßnahmen eingeschlossen sind? Das mag angestaubt wirken in Zeiten, in denen die Beschädigung eines Korans etwa durch Militärs weltweit unter Muslimen wie Nichtmuslimen mehr Empörung auszulösen vermag als die Tötung ungeborenen Lebens. Aber in den USA sind derartige religiöse Strömungen noch deutlich aktiver als beispielsweise in Deutschland, und dies keineswegs nur unter Katholiken. Die Familie Green, die Hobby Lobby führt, ist evangelisch. Bei den Hahns, den Gründern von Conestoga, handelt es sich um Mennoniten.
+
+In dem 2010 von Obama unterschriebenen Affordable Care Act heißt es, dass Krankenversicherungen Medikamente abdecken müssen, die Schwangerschaftsabbrüche auslösen. Firmen mit mehr als 50 Mitarbeitern müssen die entsprechenden Prämien unabhängig von religiösen oder moralischen Einsprüchen zahlen. Arbeitgebern, die dies verweigerten, drohten Strafen von 100 Dollar pro Tag und Angestellten.
+
+Genau diese weit gefasste Verpflichtung stoppten die Richter nun. Dabei haben weder die Greens noch die Hahns Einwände gegen Verhütung etwa in Form der Pille. Sie wandten sich vielmehr konkret gegen die "Pille danach", die zum Abort eines bereits befruchteten Eis führt – die also aus ihrer Sicht ein Leben (in einem sehr frühen Stadium) beendet, anstatt lediglich den Beginn eines Lebens zu verhindern. Das betrifft vier von insgesamt 24 Medikamenten, die Krankenversicherungen im Rahmen von Obamacare bislang abdecken mussten. Dazu gehören Pillen wie Plan B oder Ella (Ulipristal), die bei Einnahme nach einer Empfängnis abtreibend wirken können.
+
+Nur Familienunternehmen sind betroffen
+
+Die Obama-Administration hatte argumentiert, Religionsfreiheit gelte zwar für Einzelpersonen, nicht aber für auf kommerziellen Gewinn ausgerichtete Organisationen. Dieser Sicht folgte das Gericht nicht. Es übernahm mehrheitlich die Sicht der Kläger, die sich auf ein 1993 unter Präsident Bill Clinton mit breiter Mehrheit verabschiedetes Gesetz zur Ausbalancierung von staatlichen Erfordernissen und individuellen religiösen Überzeugungen beriefen (Religious Freedom Restoration Act).
+
+Allerdings wird das Urteil nur Auswirkungen auf Familienunternehmen haben, bei denen Gewissensentscheidungen und Besitzverhältnisse sehr eindeutig übereinstimmen, nicht aber auf große Konzerne.
+
+Die katholische Kirche selbst war nach einer entsprechenden Klage für ihre Einrichtungen bereits von dieser spezifischen Verpflichtung von Obamacare ausgenommen worden. Sie muss ihren Mitarbeitern beispielsweise in Krankenhäusern, Schulen oder Universitäten keine Versicherungen bezahlen, die Mittel zum Schwangerschaftsabbruch, aber auch die Pille selbst erstatten. Mit dem aktuellen Urteil haben nun erstmals auch kommerzielle Unternehmen Ausnahmen erstritten. Das könnte ein Einfallstor sein, sollten andere Familienunternehmen unter Berufung auf religiöse Überzeugungen weitergehend gegen den Versicherungsschutz für grundsätzliche Maßnahmen zur Schwangerschaftsverhütung klagen.
+
+Frauen, die in kirchlichen Einrichtungen arbeiten, können trotzdem Schwangerschaften verhüten oder abbrechen. Dies müssen sie dann aber aus eigener Tasche finanzieren. Die Pille etwa kostet in den USA für Unversicherte zwölf Dollar monatlich.
+				</content>
+				<date>
+					30.06.2014
+				</date>
+				<srcurl>
+					http://www.welt.de/politik/ausland/article129635326/Oberste-US-Richter-stoppen-Teil-von-Obamacare.html
+				</srcurl>
+				<paper>
+					welt.de
+				</paper>
+			</article>
+					<article>
+				<title>
+					Cameron spricht das Wort "Spitzenkandidat" aus
+				</title>
+				<imgsrc>
+					demo5.jpg
+				</imgsrc>
+				<intro>
+					In Brüssel musste der Regierungschef mit der Personalentscheidung für Juncker als künftigen EU-Kommissionschef eine Niederlage einstecken. Im Londoner Parlament macht er daraus einen Sieg.
+				</intro>
+				<content>
+					Der britische Premierminister David Cameron will sich einer Zusammenarbeit mit dem designierten EU-Kommissionspräsidenten Jean-Claude Juncker nicht verschließen. Er hoffe, mit Juncker eine "faire Lösung" für Großbritannien zu erreichen, schrieb Cameron in einem Gastbeitrag für den "Daily Telegraph". Der ehemalige luxemburgische Regierungschef, gegen dessen Nominierung als EU-Kommissionschef Cameron bis zuletzt Widerstand geleistet hatte, habe in Aussicht gestellt, auf die Bedenken Londons einzugehen.
+
+"Wenn wir uns darauf einigen können, dass wir – jeder nach seinem Rhythmus – nicht die gleichen Ziele verfolgen, dann ist eine Zusammenarbeit möglich", erklärte der britische Premier. Am Montagnachmittag äußerte sich Cameron im britischen Parlament zum Ausgang des EU-Gipfels.
+
+David Camerons Gesicht verzieht sich, ehe er das ungeliebte Wort ausspricht. "S-pitzenkandidat", sagt der britische Premierminister, und es klingt wie ein besonders abscheuliches Verbrechen. Die Reaktion im Unterhaus scheint dem Konservativen zu gefallen. Drei Minuten später nimmt er das S-Wort schon wieder in den Mund: "S-pitzenkandidat", das sei die falsche Vorgehensweise, um den Leiter der EU-Kommission zu bestimmen. Deshalb habe er den Luxemburger Jean-Claude Juncker, den Kandidaten der Europäischen Volkspartei EVP, für den Posten abgelehnt. "Es geht um ein wichtiges Prinzip."
+
+"Ein schlechter Tag für Europa"
+
+Cameron wirkt seiner Sache gewiss, als er am Montagnachmittag dem Londoner Parlament vom Brüsseler EU-Gipfel berichtet. Neben ihm haben die konservativen Parteifreunde, allen voran Außenminister William Hague, auf der Regierungsbank Platz genommen. Hingegen glänzen sämtliche Minister der EU-freundlichen Liberaldemokraten, vor allem Vizepremier Nick Clegg, durch Abwesenheit. Cameron braucht genau sieben Minuten, um seine 2:26-Niederlage in einen moralischen Sieg umzumünzen: Mit Junckers Kür hätten die Staats- und Regierungschefs einen Fehler gemacht.
+
+Doch wie dies erreichen? In seiner Pressekonferenz vom Freitag hatte der Brite noch frustriert und enttäuscht geklungen, tat Juncker als "klassischen Brüsseler Insider" ab, was sicher nicht als Lob gemeint war. Übers Wochenende besannen sich die Konservativen auf eine diplomatischere Vorgehensweise. In der BBC beteuerte Chefdiplomat Hague treuherzig, es sei ja nie um die Person Juncker gegangen, sondern "stets nur ums Prinzip": Den Kommissionspräsidenten sollten auch in Zukunft die Staats- und Regierungschefs bestimmen, nicht das Brüsseler Parlament. Cameron selbst griff zum Telefonhörer und gratulierte dem ungeliebten Luxemburger zum neuen Job. Man werde zukünftig mit Juncker zusammenarbeiten, hieß es anschließend in der Downing Street.
+
+Das Feld den EU-Feinden überlassen
+
+Im Parlament formulierte es der Premierminister schon wieder etwas undiplomatischer: Der "S-pitzenkandidat" der EVP habe ja in seinem Wahlprogramm ausdrücklich davon gesprochen, er wolle Großbritanniens Sonderwünsche berücksichtigen. "Wir wollen ihn daran messen."
+
+Einen anderen Namen hingegen erwähnt Cameron kein einziges Mal: Monatelang hatte er die deutsche Kanzlerin Angela Merkel umworben, ihr eigens im Parlament den roten Teppich ausgerollt und eine höchst seltene Audienz bei Königin Elizabeth II. verschafft. Dass ihn die vermeintliche Verbündete in der Juncker-Frage im Stich ließ, sei Anzeichen für die Isolation des Premierministers, höhnt Labour-Oppositionsführer Edward Miliband: "Seine Strategie, mit dem britischen Austritt aus der EU zu drohen, ist fehlgeschlagen." Genüsslich zitiert der Sozialdemokrat aus jüngst veröffentlichten Äußerungen des konservativen polnischen Außenministers Radek Sikorski: Cameron sei nicht ernstzunehmen, weil er das Feld den parteiinternen EU-Feinden überlassen habe.
+
+Diese machen gut ein Drittel der konservativen Fraktion aus. Bei früheren Debatten haben sie ihrem Parteichef durch spitze Fragen zugesetzt. Jetzt, zehn Monate vor der nächsten Unterhauswahl, demonstrieren die Tories Einigkeit. Einer der EU-Feinde nach dem anderen gratuliert Cameron, äußert gar "Bewunderung" für den Premierminister, der doch eigentlich für die fortdauernde Mitgliedschaft der Insel im Brüsseler Club plädiert. Zwei Jahrzehnte lang hat sich die älteste politische Partei der Welt über der Frage der europäischen Einigung zerfleischt. An diesem Nachmittag wirkt sie selbst geeint – in der Ablehnung nicht nur des "S-pitzenkandidaten", sondern des gesamten Brüsseler Projekts.
+				</content>
+				<date>
+					30.06.2014
+				</date>
+				<srcurl>
+					http://www.welt.de/politik/ausland/article129636336/Cameron-spricht-das-Wort-S-pitzenkandidat-aus.html
+				</srcurl>
+				<paper>
+					welt.de
 				</paper>
 			</article>
 				

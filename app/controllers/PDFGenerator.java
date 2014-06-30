@@ -30,14 +30,17 @@ public class PDFGenerator extends Controller {
 		Vector<Article> articles = new Vector<Article>();
 		
 		for(PreferenceSubscription ps : preferences) {
+			System.out.println("..");
 			for(Source s : positiveSources) {
+				System.out.println("***");
 				List<Article> arts = Article.find("byPreferenceAndSource", ps.preference, s).fetch();
-				for(Article a : arts) articles.addElement(a);
+				for(Article a : arts) {
+					articles.addElement(a);
+					System.out.println(a.title);
+				}
 			}
 			
 		}
-		
-		
 		
 		Article titleArticle = articles.firstElement();
 		

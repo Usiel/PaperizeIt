@@ -3,7 +3,7 @@
 	<title>Your Paperize.it Paper</title>
 	<date>${(newsPaperDate).format('dd.MM.yyyy')}</date>
 	<paperizelogo>paperize_logo.png</paperizelogo>
-	<signature>http://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Angela_Merkel_Signature.svg/500px-Angela_Merkel_Signature.svg.png</signature>
+	<signature>sig_ang_merk.png</signature>
 	
 	<!-- recipient -->
 	<recipient>
@@ -31,7 +31,7 @@
 	-->
 	<articles>
 		<titlearticle>
-			<title>${(titleArticle.title)}</title>
+			<title>${(titleArticle.title.raw())}</title>
 			<imgsrc>${(titleArticle.imgSrc)}</imgsrc>
 		</titlearticle>
 		

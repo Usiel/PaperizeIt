@@ -221,6 +221,8 @@
                         Newspaper:&#160;<xsl:value-of select="newspaper" />&#160;|&#160;
                         Source:&#160;<xsl:value-of select="srcurl" />
                     </fo:block>
+                    
+                    <fo:block break-after="page"></fo:block>
 
                  </xsl:for-each>
 
